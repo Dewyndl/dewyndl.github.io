@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Программиста</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Тёмный фон */
+            color: #fff;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Высота экрана */
+            text-align: center;
+            background-color: #121212;
+        }
+        header h1 {
+            color: #ff0000; /* Красный цвет текста */
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        header p {
+            color: #ff0000;
+            font-size: 1.3rem;
+            margin: 1rem 0 0;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #ff0000;
+            text-decoration: none;
+            font-size: 1.4rem;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            color: #ff0000;
+            margin-bottom: 1.5rem;
+        }
+        #projects, #skills {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        #projects p, #skills p, #contact p {
+            font-size: 1.2rem;
+            color: #ccc;
+            line-height: 1.8;
+        }
+        .project-card {
+            background-color: #282828;
+            margin: 1rem auto;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #ff0000;
+        }
+        .project-card p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        #contact {
+            background-color: #121212;
+            padding-bottom: 4rem;
+        }
+        #contact a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-
-<p>This is my portfolio.</p>
-
+    <header>
+        <h1>Dewyndl</h1>
+        <p>Программист | Дата аналитик</p>
+        <nav>
+            <a href="#skills">Навыки</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+    <section id="skills">
+        <h2>Навыки</h2>
+        <p>
+            <strong>Языки программирования:</strong> Python, C.<br>
+            <strong>Фреймворки:</strong> Django, aiogram.<br>
+            <strong>Инструменты:</strong> Git, Docker, PostgreSQL.<br>
+            <strong>Gamedev:</strong> Godot, Unity, Игровые алгоритмы.<br>
+            <strong>Навыки:</strong> Разработка TG ботов; автоматизация;<br>Сбор,
+            аналитика и представление данных,
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Email: <a href="dewyndlx@gmail.com">dewyndlx@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/irriotor" target="_blank">@irriotor</a></p>
+    </section>
 </body>
 </html>
